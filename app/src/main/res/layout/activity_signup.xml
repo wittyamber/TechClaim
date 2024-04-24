@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#8EBBCC"
+    android:background="@drawable/wallback"
     tools:context=".signup_activity">
 
     <ImageView
@@ -33,56 +33,101 @@
         android:textSize="10dp"
         android:textColor="@color/transparent"/>
 
-    <EditText
-        android:id="@+id/signup_studID"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="@drawable/round_back_dark"
-        android:hint="Student ID"
-        android:textColorHint="@color/hint_col"
-        android:textColor="@color/app_black"
-        android:maxLines="1"
-        android:inputType="textEmailAddress"
-        android:textSize="16sp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:orientation="horizontal"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_back_dark">
 
-    <EditText
-        android:id="@+id/signup_name"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="@drawable/round_back_dark"
-        android:hint="Name"
-        android:textColorHint="@color/hint_col"
-        android:textColor="@color/app_black"
-        android:maxLines="1"
-        android:inputType="textEmailAddress"
-        android:textSize="16sp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/studicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/id" />
 
-    <EditText
-        android:id="@+id/signup_email"
+        <EditText
+            android:id="@+id/signup_studID"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/round_back_dark"
+            android:hint="Student ID"
+            android:textColorHint="@color/hint_col"
+            android:textColor="@color/app_black"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="20dp"
+            android:layout_marginEnd="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="@drawable/round_back_dark"
-        android:hint="Email"
-        android:textColorHint="@color/hint_col"
-        android:textColor="@color/app_black"
-        android:maxLines="1"
-        android:inputType="textEmailAddress"
-        android:textSize="16sp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:orientation="horizontal"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_back_dark">
+
+        <ImageView
+            android:id="@+id/nameicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/name" />
+
+        <EditText
+            android:id="@+id/signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/round_back_dark"
+            android:hint="Name"
+            android:textColorHint="@color/hint_col"
+            android:textColor="@color/app_black"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="20dp"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_back_dark">
+
+        <ImageView
+            android:id="@+id/emailicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/email" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/round_back_dark"
+            android:hint="Email"
+            android:textColorHint="@color/hint_col"
+            android:textColor="@color/app_black"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="20dp"
+            android:layout_marginEnd="20dp" />
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -92,16 +137,26 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/round_back_dark">
 
+        <ImageView
+            android:id="@+id/passicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="false"
+            android:padding="10dp"
+            android:src="@drawable/pass" />
+
         <EditText
             android:id="@+id/signup_password"
-            android:layout_toStartOf="@+id/pass_icon_signup"
+            android:layout_toRightOf="@+id/passicon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/round_back_dark"
             android:hint="Password"
             android:textColorHint="@color/hint_col"
             android:textColor="@color/app_black"
-            android:paddingStart="20dp"
+            android:paddingStart="5dp"
             android:paddingEnd="20dp"
             android:textSize="16sp"
             android:inputType="textPassword"
@@ -127,16 +182,26 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/round_back_dark">
 
+        <ImageView
+            android:id="@+id/con_pass_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="false"
+            android:padding="10dp"
+            android:src="@drawable/pass" />
+
         <EditText
             android:id="@+id/signup_password_con"
-            android:layout_toStartOf="@+id/pass_icon_con"
+            android:layout_toRightOf="@+id/con_pass_icon"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/round_back_dark"
-            android:hint="Password"
+            android:hint="Confirm Password"
             android:textColorHint="@color/hint_col"
             android:textColor="@color/app_black"
-            android:paddingStart="20dp"
+            android:paddingStart="5dp"
             android:paddingEnd="20dp"
             android:textSize="16sp"
             android:inputType="textPassword"

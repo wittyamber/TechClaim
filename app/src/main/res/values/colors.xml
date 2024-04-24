@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#7F000000</color>
     <color name="app_blue">#164B60</color>
+    <color name="light_blue">#06E8F4</color>
     <color name="app_green"> #21ED54</color>
     <color name="app_black">#232323</color>
     <color name="hint_col">#918D86</color>
