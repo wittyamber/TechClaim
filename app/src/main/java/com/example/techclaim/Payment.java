@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class Payment extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     ImageView menu;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_payment);
 
         drawerLayout = findViewById(R.id.drawerLayout);
         menu = findViewById(R.id.menu);
@@ -41,43 +41,43 @@ public class MainActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                recreate();
+                redirectActivity(Payment.this, MainActivity.class);
             }
         });
         activities.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(MainActivity.this, Activities.class);
+                redirectActivity(Payment.this, Activities.class);
             }
         });
         invoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(MainActivity.this, Invoice.class);
+                redirectActivity(Payment.this, Invoice.class);
             }
         });
         payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(MainActivity.this, Payment.class);
+                recreate();
             }
         });
         acc_management.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(MainActivity.this, Acc_Management.class);
+                redirectActivity(Payment.this, Acc_Management.class);
             }
         });
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(MainActivity.this, Settings.class);
+                redirectActivity(Payment.this, Settings.class);
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Logout",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Payment.this,"Logout",Toast.LENGTH_SHORT).show();
             }
         });
     }

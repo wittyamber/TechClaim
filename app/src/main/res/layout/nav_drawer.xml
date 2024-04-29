@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/drawer_border"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="16dp"
+        android:background="@drawable/header_bkg"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/prof"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contact@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home_icon" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_black"
+            android:text="Home"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/activities_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_black"
+            android:text="Activities"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invoice"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/invoice_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_black"
+            android:text="Invoice"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payments"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/payment_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_black"
+            android:text="Payments"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/app_blue"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acc_mangmnt"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/account_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_black"
+            android:text="Account Management"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/settings_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_black"
+            android:text="Settings"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logout_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_black"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
