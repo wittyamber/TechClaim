@@ -3,39 +3,371 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/drawerLayout"
-    tools:context=".MainActivity">
+    android:background="@drawable/wallback"
+    tools:context=".Activities">
 
+
+    <!-- Main content -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/toolbar"/>
 
+        <!-- Toolbar -->
+        <include layout="@layout/toolbar"/>
+
+
+        <!-- Welcome message -->
+
+
+        <!-- Description -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
             android:layout_gravity="center"
-            android:layout_marginTop="400dp"
-            android:textColor="@color/app_black"
-            android:textSize="36dp"/>
+            android:padding="15dp"
+            android:text="Welcome!"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start exploring and discover exciting activities to participate in!"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+
+        <!-- Activity Details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List of Upcoming Event Activities:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:padding="16dp"/>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/light_blue"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#86c5da"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <!-- Intramurals -->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Intramurals 2023"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount to be paid:"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:text="08-15-2025"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P350.00"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#86c5da"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <!-- IT Fest -->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="IT FEST"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount to be paid:"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:text="04-26-2025"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P200.00"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#86c5da"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <!-- Buwan ng wika -->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BUWAN NG WIKA"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount to be paid:"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:text="08-20-2025"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P100.00"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
 
     </LinearLayout>
 
+
+    <!-- Side navigation drawer -->
     <RelativeLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:background="@color/white"
-        android:layout_gravity= "start">
+        android:layout_gravity="start">
 
-        <include
-            layout="@layout/nav_drawer"/>
+
+        <!-- Navigation items -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:id="@+id/nav_home"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:id="@+id/nav_settings"
+            android:layout_below="@id/nav_home"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:id="@+id/nav_logout"
+            android:layout_below="@id/nav_settings"/>
+
 
     </RelativeLayout>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

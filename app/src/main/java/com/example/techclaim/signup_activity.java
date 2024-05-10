@@ -31,7 +31,7 @@ public class signup_activity extends AppCompatActivity {
     private boolean conpasswordShowing = false;
     private EditText signup_studID, signup_name, signup_email, signup_password, signup_password_con;
     private AppCompatButton signup_btn;
-    private String URL = "http://192.168.101.74/techclaim/signup.php";
+    private String URL = "http://192.168.101.73/techclaim/signup.php";
     private String studID, name, email, password, passwordcon;
 
     @Override
@@ -101,11 +101,10 @@ public class signup_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(signup_activity.this, MainActivity.class);
-
-
+                save(v);
             }
         });
+
 
         logintxt_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,6 +162,5 @@ public class signup_activity extends AppCompatActivity {
     public void login(View view) {
         Intent intent = new Intent(this, login_activity.class);
         startActivity(intent);
-        finish();
     }
 }
